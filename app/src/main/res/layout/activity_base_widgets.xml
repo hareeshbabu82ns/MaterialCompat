@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -105,6 +106,7 @@
     android:layout_alignBottom="@+id/toggleButton"
     android:layout_toEndOf="@+id/toggleButton"
     android:layout_toRightOf="@+id/toggleButton"
+    android:checked="true"
     android:text="Switch"/>
 
   <RatingBar
@@ -134,16 +136,16 @@
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_below="@+id/progressBar"
+    android:checked="true"
     android:text="Switch Compat"/>
 
-  <!--<android.support.design.widget.FloatingActionButton-->
-  <!--android:layout_width="wrap_content"-->
-  <!--android:layout_height="wrap_content"-->
-  <!--android:layout_alignParentRight="true"-->
-  <!--android:layout_alignParentBottom="true"-->
-  <!--android:src="@android:drawable/btn_star"-->
-  <!--android:layout_margin="@dimen/fab_margin"-->
-  <!--app:borderWidth="0dp"-->
-  <!--app:fabSize="normal"/>-->
+  <android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@android:drawable/btn_star"
+    app:fabSize="normal"/>
 
 </RelativeLayout>
